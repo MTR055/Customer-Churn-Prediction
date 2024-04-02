@@ -1,0 +1,271 @@
+2024-03-29 15:56:14,594 : ERROR : web.py : columns() got an unexpected keyword argument 'gap'
+2024-03-29 15:57:01,965 : ERROR : web.py : All numerical arguments must be of the same type.
+`value` has NoValue type.
+`min_value` has int type.
+`max_value` has float type.
+`step` has NoneType type.
+2024-03-29 15:58:56,546 : ERROR : web.py : There are multiple identical `st.selectbox` widgets with the
+same generated key.
+
+When a widget is created, it's assigned an internal key based on
+its structure. Multiple widgets with an identical structure will
+result in the same internal key, which causes this error.
+
+To fix this error, please pass a unique `key` argument to
+`st.selectbox`.
+2024-03-29 16:04:25,486 : ERROR : web.py : module 'streamlit' has no attribute 'cache_data'
+2024-03-29 16:04:25,486 : ERROR : web.py : module 'streamlit' has no attribute 'cache_data'
+2024-03-29 16:04:25,486 : ERROR : web.py : module 'streamlit' has no attribute 'cache_data'
+2024-03-29 16:04:25,486 : ERROR : web.py : module 'streamlit' has no attribute 'cache_data'
+2024-03-29 16:04:25,486 : ERROR : web.py : module 'streamlit' has no attribute 'cache_data'
+2024-03-29 16:04:25,486 : ERROR : web.py : module 'streamlit' has no attribute 'cache_data'
+2024-03-29 16:04:25,486 : ERROR : web.py : module 'streamlit' has no attribute 'cache_data'
+2024-03-29 16:04:25,486 : ERROR : web.py : module 'streamlit' has no attribute 'cache_data'
+2024-03-29 16:04:25,486 : ERROR : web.py : module 'streamlit' has no attribute 'cache_data'
+2024-03-29 16:04:25,486 : ERROR : web.py : module 'streamlit' has no attribute 'cache_data'
+2024-03-29 16:04:25,486 : ERROR : web.py : module 'streamlit' has no attribute 'cache_data'
+2024-03-29 16:04:25,486 : ERROR : web.py : module 'streamlit' has no attribute 'cache_data'
+2024-03-29 16:04:25,486 : ERROR : web.py : module 'streamlit' has no attribute 'cache_data'
+2024-03-29 16:04:25,486 : ERROR : web.py : module 'streamlit' has no attribute 'cache_data'
+2024-03-29 16:04:25,486 : ERROR : web.py : module 'streamlit' has no attribute 'cache_data'
+2024-03-29 16:07:37,341 : ERROR : web.py : [Errno 2] No such file or directory: '../preprocessing_pipelines/column_transformer'
+2024-03-29 16:07:37,341 : ERROR : web.py : [Errno 2] No such file or directory: '../preprocessing_pipelines/column_transformer'
+2024-03-29 16:07:37,341 : ERROR : web.py : [Errno 2] No such file or directory: '../preprocessing_pipelines/column_transformer'
+2024-03-29 16:07:37,341 : ERROR : web.py : [Errno 2] No such file or directory: '../preprocessing_pipelines/column_transformer'
+2024-03-29 16:07:37,341 : ERROR : web.py : [Errno 2] No such file or directory: '../preprocessing_pipelines/column_transformer'
+2024-03-29 16:07:37,341 : ERROR : web.py : [Errno 2] No such file or directory: '../preprocessing_pipelines/column_transformer'
+2024-03-29 16:07:37,341 : ERROR : web.py : [Errno 2] No such file or directory: '../preprocessing_pipelines/column_transformer'
+2024-03-29 16:07:37,341 : ERROR : web.py : [Errno 2] No such file or directory: '../preprocessing_pipelines/column_transformer'
+2024-03-29 16:07:37,341 : ERROR : web.py : [Errno 2] No such file or directory: '../preprocessing_pipelines/column_transformer'
+2024-03-29 16:07:37,341 : ERROR : web.py : [Errno 2] No such file or directory: '../preprocessing_pipelines/column_transformer'
+2024-03-29 16:07:37,341 : ERROR : web.py : [Errno 2] No such file or directory: '../preprocessing_pipelines/column_transformer'
+2024-03-29 16:07:37,341 : ERROR : web.py : [Errno 2] No such file or directory: '../preprocessing_pipelines/column_transformer'
+2024-03-29 16:07:37,341 : ERROR : web.py : [Errno 2] No such file or directory: '../preprocessing_pipelines/column_transformer'
+2024-03-29 16:07:37,341 : ERROR : web.py : [Errno 2] No such file or directory: '../preprocessing_pipelines/column_transformer'
+2024-03-29 16:07:37,341 : ERROR : web.py : [Errno 2] No such file or directory: '../preprocessing_pipelines/column_transformer'
+2024-03-29 16:07:37,341 : ERROR : web.py : [Errno 2] No such file or directory: '../preprocessing_pipelines/column_transformer'
+2024-03-29 16:07:37,341 : ERROR : web.py : [Errno 2] No such file or directory: '../preprocessing_pipelines/column_transformer'
+2024-03-29 16:07:37,341 : ERROR : web.py : [Errno 2] No such file or directory: '../preprocessing_pipelines/column_transformer'
+2024-03-29 16:07:37,341 : ERROR : web.py : [Errno 2] No such file or directory: '../preprocessing_pipelines/column_transformer'
+2024-03-29 16:07:37,341 : ERROR : web.py : [Errno 2] No such file or directory: '../preprocessing_pipelines/column_transformer'
+2024-03-29 16:08:39,403 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:08:39,403 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:08:39,403 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:08:39,403 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:08:39,403 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:08:39,403 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:08:39,403 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:08:39,403 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:08:39,403 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:08:39,403 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:08:39,403 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:08:39,403 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:08:39,403 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:08:39,403 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:08:39,403 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:08:39,403 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:08:39,403 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:08:39,403 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:08:39,403 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:08:39,403 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:08:39,403 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:08:39,403 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:08:39,403 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:08:39,403 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:08:39,403 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:18:31,405 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:18:31,405 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:18:31,405 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:18:31,405 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:18:31,405 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:18:31,405 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:18:31,405 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:18:31,405 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:18:31,405 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:18:31,405 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:18:31,405 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:18:31,405 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:18:31,405 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:18:31,405 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:18:31,405 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:18:31,405 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:18:31,405 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:18:31,405 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:18:31,405 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:18:31,405 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:18:31,405 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:18:31,405 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:18:31,405 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:18:31,405 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:18:31,405 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:18:31,405 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:18:31,405 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:18:31,405 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:18:31,405 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:18:31,405 : ERROR : web.py : This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:20:31,668 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:22:09,131 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 16:24:21,493 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'
+2024-03-29 17:17:19,065 : ERROR : web.py : 'DataFrame' object has no attribute 'type'

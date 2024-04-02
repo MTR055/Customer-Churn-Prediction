@@ -1,0 +1,50 @@
+2024-03-30 09:30:52,255 : ERROR : web.py : [Errno 2] No such file or directory: '../preprocessing_pipelines/preprocess_pipeline.pkl'
+2024-03-30 09:30:52,255 : ERROR : web.py : [Errno 2] No such file or directory: '../preprocessing_pipelines/preprocess_pipeline.pkl'
+2024-03-30 09:30:52,255 : ERROR : web.py : [Errno 2] No such file or directory: '../preprocessing_pipelines/preprocess_pipeline.pkl'
+2024-03-30 09:30:52,255 : ERROR : web.py : [Errno 2] No such file or directory: '../preprocessing_pipelines/preprocess_pipeline.pkl'
+2024-03-30 09:30:52,255 : ERROR : web.py : [Errno 2] No such file or directory: '../preprocessing_pipelines/preprocess_pipeline.pkl'
+2024-03-30 09:32:25,443 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-30 09:32:25,443 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-30 09:32:25,443 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-30 09:32:25,443 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-30 09:32:25,443 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-30 09:32:25,443 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-30 09:32:25,443 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-30 09:32:25,443 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-30 09:32:25,443 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-30 09:32:25,443 : ERROR : web.py : 'numpy.ndarray' object has no attribute 'transform'
+2024-03-30 09:33:47,662 : ERROR : web.py : 0
+2024-03-30 09:33:47,662 : ERROR : web.py : 0
+2024-03-30 09:33:47,662 : ERROR : web.py : 0
+2024-03-30 09:33:47,662 : ERROR : web.py : 0
+2024-03-30 09:33:47,662 : ERROR : web.py : 0
+2024-03-30 09:33:47,662 : ERROR : web.py : 0
+2024-03-30 09:33:47,662 : ERROR : web.py : 0
+2024-03-30 09:33:47,662 : ERROR : web.py : 0
+2024-03-30 09:33:47,662 : ERROR : web.py : 0
+2024-03-30 09:33:47,662 : ERROR : web.py : 0
+2024-03-30 09:33:47,662 : ERROR : web.py : 0
+2024-03-30 09:33:47,662 : ERROR : web.py : 0
+2024-03-30 09:33:47,662 : ERROR : web.py : 0
+2024-03-30 09:33:47,662 : ERROR : web.py : 0
+2024-03-30 09:33:47,662 : ERROR : web.py : 0
+2024-03-30 09:35:14,038 : ERROR : web.py : unhashable type: 'numpy.ndarray'
+2024-03-30 09:35:14,038 : ERROR : web.py : unhashable type: 'numpy.ndarray'
+2024-03-30 09:35:14,038 : ERROR : web.py : unhashable type: 'numpy.ndarray'
+2024-03-30 09:35:14,038 : ERROR : web.py : unhashable type: 'numpy.ndarray'
+2024-03-30 09:35:14,038 : ERROR : web.py : unhashable type: 'numpy.ndarray'
+2024-03-30 09:35:14,038 : ERROR : web.py : unhashable type: 'numpy.ndarray'
+2024-03-30 09:35:14,038 : ERROR : web.py : unhashable type: 'numpy.ndarray'
+2024-03-30 09:35:14,038 : ERROR : web.py : unhashable type: 'numpy.ndarray'
+2024-03-30 09:35:14,038 : ERROR : web.py : unhashable type: 'numpy.ndarray'
+2024-03-30 09:35:14,038 : ERROR : web.py : unhashable type: 'numpy.ndarray'
+2024-03-30 09:35:14,038 : ERROR : web.py : unhashable type: 'numpy.ndarray'
+2024-03-30 09:35:14,038 : ERROR : web.py : unhashable type: 'numpy.ndarray'
+2024-03-30 09:35:14,038 : ERROR : web.py : unhashable type: 'numpy.ndarray'
+2024-03-30 09:35:14,038 : ERROR : web.py : unhashable type: 'numpy.ndarray'
+2024-03-30 09:35:14,038 : ERROR : web.py : unhashable type: 'numpy.ndarray'
+2024-03-30 09:35:14,038 : ERROR : web.py : unhashable type: 'numpy.ndarray'
+2024-03-30 09:35:14,038 : ERROR : web.py : unhashable type: 'numpy.ndarray'
+2024-03-30 09:35:14,038 : ERROR : web.py : unhashable type: 'numpy.ndarray'
+2024-03-30 09:35:14,038 : ERROR : web.py : unhashable type: 'numpy.ndarray'
+2024-03-30 09:35:14,038 : ERROR : web.py : unhashable type: 'numpy.ndarray'

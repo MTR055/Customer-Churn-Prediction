@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/c/Users/thiru/Desktop/Training/Projects/Movie_Revenue_prediction/src/mlruns/0/e3fc4343248f4c809eb0efa4166e5897/artifacts
+end_time: 1711771037298
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: e3fc4343248f4c809eb0efa4166e5897
+run_uuid: e3fc4343248f4c809eb0efa4166e5897
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711771018324
+status: 3
+tags: []
+user_id: mtr_055

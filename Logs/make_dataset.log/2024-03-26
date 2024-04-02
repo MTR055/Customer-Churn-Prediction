@@ -1,0 +1,36 @@
+2024-03-26 09:28:36,763 : INFO : make_dataset.py : Loading of data started.
+2024-03-26 09:28:40,252 : INFO : make_dataset.py : new file is being created
+2024-03-26 09:28:40,547 : INFO : make_dataset.py : Data loading completed and data saved to the directory Data/raw
+2024-03-26 09:45:30,782 : INFO : make_dataset.py : Loading of data started.
+2024-03-26 09:45:33,587 : INFO : make_dataset.py : new file is being created
+2024-03-26 09:45:33,981 : INFO : make_dataset.py : Data loading completed and data saved to the directory Data/raw
+2024-03-26 09:47:14,487 : INFO : make_dataset.py : Loading of data started.
+2024-03-26 09:47:16,854 : INFO : make_dataset.py : new file is being created
+2024-03-26 09:47:16,884 : ERROR : make_dataset.py : [Errno 20] Not a directory: '../Data/raw_Data/raw_Data/.csv'
+2024-03-26 09:51:27,657 : INFO : make_dataset.py : Loading of data started.
+2024-03-26 09:51:30,824 : INFO : make_dataset.py : new file is being created
+2024-03-26 09:51:31,192 : INFO : make_dataset.py : Data loading completed and data saved to the directory Data/raw
+2024-03-26 09:53:17,151 : INFO : make_dataset.py : Loading of data started.
+2024-03-26 09:53:20,146 : INFO : make_dataset.py : new file is being created
+2024-03-26 09:53:20,593 : INFO : make_dataset.py : Data loading completed and data saved to the directory Data/raw
+2024-03-26 09:56:44,520 : INFO : make_dataset.py : Loading of data started.
+2024-03-26 09:56:47,078 : INFO : make_dataset.py : new file is being created
+2024-03-26 09:56:47,323 : INFO : make_dataset.py : Data loading completed and data saved to the directory Data/raw
+2024-03-26 09:58:09,654 : INFO : make_dataset.py : Loading of data started.
+2024-03-26 09:58:11,758 : INFO : make_dataset.py : new file is being created
+2024-03-26 09:58:12,060 : INFO : make_dataset.py : Data loading completed and data saved to the directory Data/raw
+2024-03-26 09:59:46,399 : INFO : make_dataset.py : Loading of data started.
+2024-03-26 09:59:48,418 : INFO : make_dataset.py : new file is being created
+2024-03-26 09:59:48,643 : INFO : make_dataset.py : Data loading completed and data saved to the directory Data/raw
+2024-03-26 10:26:32,298 : INFO : make_dataset.py : Loading of data started.
+2024-03-26 10:26:35,884 : INFO : make_dataset.py : new file is being created
+2024-03-26 10:26:36,173 : INFO : make_dataset.py : Data loading completed and data saved to the directory Data/raw
+2024-03-26 11:36:03,788 : INFO : make_dataset.py : Loading of data started.
+2024-03-26 11:36:04,778 : INFO : make_dataset.py : new file is being created
+2024-03-26 11:36:04,860 : INFO : make_dataset.py : Data loading completed and data saved to the directory Data/raw
+2024-03-26 11:38:40,680 : INFO : make_dataset.py : Loading of data started.
+2024-03-26 11:38:41,190 : INFO : make_dataset.py : new file is being created
+2024-03-26 11:38:41,283 : INFO : make_dataset.py : Data loading completed and data saved to the directory Data/raw
+2024-03-26 11:39:14,495 : INFO : make_dataset.py : Loading of data started.
+2024-03-26 11:39:15,027 : INFO : make_dataset.py : new file is being created
+2024-03-26 11:39:15,104 : INFO : make_dataset.py : Data loading completed and data saved to the directory Data/raw

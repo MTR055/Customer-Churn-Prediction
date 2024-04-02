@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>src.web &mdash; Customer Churn Prediction v.1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Customer Churn Prediction
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules.html">Movie_Revenue_prediction</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Customer Churn Prediction</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">src.web</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for src.web</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">)</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">joblib</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">streamlit</span> <span class="k">as</span> <span class="nn">st</span>
+
+<span class="kn">from</span> <span class="nn">src.utilities</span> <span class="kn">import</span> <span class="n">Utilities</span>
+<span class="kn">from</span> <span class="nn">src.logfile</span> <span class="kn">import</span> <span class="n">get_logger</span>
+
+
+
+<span class="n">params</span> <span class="o">=</span> <span class="n">Utilities</span><span class="p">()</span><span class="o">.</span><span class="n">read_params</span><span class="p">()</span>
+
+<span class="n">logger</span> <span class="o">=</span> <span class="n">get_logger</span><span class="p">(</span><span class="s1">&#39;web&#39;</span><span class="p">)</span>
+
+<div class="viewcode-block" id="WebApp"><a class="viewcode-back" href="../../src.html#src.web.WebApp">[docs]</a><span class="k">class</span> <span class="nc">WebApp</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">pass</span>
+
+<div class="viewcode-block" id="WebApp.webapp"><a class="viewcode-back" href="../../src.html#src.web.WebApp.webapp">[docs]</a>    <span class="k">def</span> <span class="nf">webapp</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        This method is used to create a webapp by which users will be able to make predictions</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">st</span><span class="o">.</span><span class="n">set_page_config</span><span class="p">(</span>
+                <span class="n">page_title</span><span class="o">=</span><span class="s2">&quot;Churn Detection&quot;</span><span class="p">,</span>
+                <span class="n">page_icon</span><span class="o">=</span><span class="s2">&quot;🔄&quot;</span><span class="p">,</span>
+                <span class="n">layout</span><span class="o">=</span><span class="s2">&quot;wide&quot;</span><span class="p">,</span>
+                <span class="n">initial_sidebar_state</span><span class="o">=</span><span class="s2">&quot;expanded&quot;</span><span class="p">,</span>
+            <span class="p">)</span>
+            <span class="c1"># Adding the title to the page</span>
+            <span class="n">st</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Customer Churn Prediction&#39;</span><span class="p">)</span>
+
+            <span class="c1"># Adding a author name to the project</span>
+            <span class="n">st</span><span class="o">.</span><span class="n">caption</span><span class="p">(</span><span class="s1">&#39;By M.Thirupati Reddy&#39;</span><span class="p">)</span>
+
+            <span class="c1"># Making Predictions</span>
+            <span class="n">st</span><span class="o">.</span><span class="n">header</span><span class="p">(</span><span class="s1">&#39;Make Prediction&#39;</span><span class="p">)</span>
+
+            <span class="c1"># Creating an interfact to get inputs from the user</span>
+            <span class="n">col1</span><span class="p">,</span> <span class="n">col2</span><span class="p">,</span> <span class="n">col3</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">columns</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+
+             
+
+            <span class="n">TotalCharges</span> <span class="o">=</span> <span class="n">col1</span><span class="o">.</span><span class="n">number_input</span><span class="p">(</span><span class="s1">&#39;TotalCharges&#39;</span><span class="p">,</span> <span class="n">min_value</span><span class="o">=</span><span class="mf">0.00</span><span class="p">,</span>
+                                <span class="n">max_value</span><span class="o">=</span><span class="mf">10000.00</span><span class="p">)</span>
+            <span class="n">MonthlyCharges</span> <span class="o">=</span> <span class="n">col1</span><span class="o">.</span><span class="n">number_input</span><span class="p">(</span><span class="s1">&#39;MonthlyCharges&#39;</span><span class="p">,</span> <span class="n">min_value</span><span class="o">=</span><span class="mf">0.00</span><span class="p">,</span>
+                                <span class="n">max_value</span><span class="o">=</span><span class="mf">2000.00</span><span class="p">)</span>
+            <span class="n">tenure</span> <span class="o">=</span> <span class="n">col1</span><span class="o">.</span><span class="n">number_input</span><span class="p">(</span><span class="s1">&#39;tenure(days)&#39;</span><span class="p">,</span> <span class="n">min_value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+                                <span class="n">max_value</span><span class="o">=</span><span class="mi">2000</span><span class="p">)</span>
+
+            <span class="n">gender</span> <span class="o">=</span> <span class="n">col1</span><span class="o">.</span><span class="n">selectbox</span><span class="p">(</span>
+                <span class="s1">&#39;gender&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Male&#39;</span><span class="p">,</span> <span class="s1">&#39;Female&#39;</span><span class="p">])</span>
+            <span class="n">SeniorCitizen</span> <span class="o">=</span> <span class="n">col1</span><span class="o">.</span><span class="n">selectbox</span><span class="p">(</span>
+                <span class="s1">&#39;SeniorCitizen&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Yes&#39;</span><span class="p">,</span> <span class="s1">&#39;No&#39;</span><span class="p">])</span>
+            <span class="n">Partner</span> <span class="o">=</span> <span class="n">col1</span><span class="o">.</span><span class="n">selectbox</span><span class="p">(</span>
+                <span class="s1">&#39;Partner&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Yes&#39;</span><span class="p">,</span> <span class="s1">&#39;No&#39;</span><span class="p">])</span>
+            <span class="n">Dependents</span> <span class="o">=</span> <span class="n">col2</span><span class="o">.</span><span class="n">selectbox</span><span class="p">(</span><span class="s1">&#39;Dependents&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Yes&#39;</span><span class="p">,</span> <span class="s1">&#39;No&#39;</span><span class="p">])</span>
+    
+            <span class="n">PhoneService</span> <span class="o">=</span> <span class="n">col2</span><span class="o">.</span><span class="n">selectbox</span><span class="p">(</span><span class="s1">&#39;PhoneService&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Yes&#39;</span><span class="p">,</span> <span class="s1">&#39;No&#39;</span><span class="p">])</span>
+            <span class="n">PaperlessBilling</span> <span class="o">=</span> <span class="n">col2</span><span class="o">.</span><span class="n">selectbox</span><span class="p">(</span><span class="s1">&#39;PaperlessBilling&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Yes&#39;</span><span class="p">,</span> <span class="s1">&#39;No&#39;</span><span class="p">])</span>
+
+            <span class="n">MultipleLines</span> <span class="o">=</span> <span class="n">col2</span><span class="o">.</span><span class="n">selectbox</span><span class="p">(</span><span class="s1">&#39;MultipleLines&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;No&#39;</span><span class="p">,</span> <span class="s1">&#39;Yes&#39;</span><span class="p">,</span><span class="s1">&#39;No phone service&#39;</span><span class="p">])</span>
+            <span class="n">OnlineSecurity</span> <span class="o">=</span> <span class="n">col2</span><span class="o">.</span><span class="n">selectbox</span><span class="p">(</span><span class="s1">&#39;OnlineSecurity&#39;</span><span class="p">,</span> <span class="p">[</span> <span class="s1">&#39;Yes&#39;</span><span class="p">,</span><span class="s1">&#39;No&#39;</span><span class="p">,</span><span class="s1">&#39;No internet service&#39;</span><span class="p">])</span>
+            <span class="n">OnlineBackup</span> <span class="o">=</span> <span class="n">col2</span><span class="o">.</span><span class="n">selectbox</span><span class="p">(</span><span class="s1">&#39;OnlineBackup&#39;</span><span class="p">,</span> <span class="p">[</span> <span class="s1">&#39;Yes&#39;</span><span class="p">,</span><span class="s1">&#39;No&#39;</span> <span class="p">,</span> <span class="s1">&#39;No internet service&#39;</span><span class="p">])</span>
+            <span class="n">DeviceProtection</span> <span class="o">=</span> <span class="n">col2</span><span class="o">.</span><span class="n">selectbox</span><span class="p">(</span><span class="s1">&#39;DeviceProtection&#39;</span><span class="p">,</span> <span class="p">[</span> <span class="s1">&#39;Yes&#39;</span><span class="p">,</span><span class="s1">&#39;No&#39;</span><span class="p">,</span><span class="s1">&#39;No internet service&#39;</span><span class="p">])</span>
+            <span class="n">TechSupport</span> <span class="o">=</span> <span class="n">col3</span><span class="o">.</span><span class="n">selectbox</span><span class="p">(</span><span class="s1">&#39;TechSupport&#39;</span><span class="p">,</span> <span class="p">[</span> <span class="s1">&#39;Yes&#39;</span><span class="p">,</span><span class="s1">&#39;No&#39;</span><span class="p">,</span><span class="s1">&#39;No internet service&#39;</span><span class="p">])</span>
+            <span class="n">StreamingTV</span> <span class="o">=</span> <span class="n">col3</span><span class="o">.</span><span class="n">selectbox</span><span class="p">(</span><span class="s1">&#39;StreamingTV&#39;</span><span class="p">,</span> <span class="p">[</span> <span class="s1">&#39;Yes&#39;</span><span class="p">,</span><span class="s1">&#39;No&#39;</span><span class="p">,</span><span class="s1">&#39;No internet service&#39;</span><span class="p">])</span>
+            <span class="n">StreamingMovies</span> <span class="o">=</span> <span class="n">col3</span><span class="o">.</span><span class="n">selectbox</span><span class="p">(</span><span class="s1">&#39;StreamingMovies&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Yes&#39;</span><span class="p">,</span><span class="s1">&#39;No&#39;</span><span class="p">,</span><span class="s1">&#39;No internet service&#39;</span><span class="p">])</span>
+            
+
+            <span class="n">InternetService</span> <span class="o">=</span> <span class="n">col3</span><span class="o">.</span><span class="n">selectbox</span><span class="p">(</span><span class="s1">&#39;InternetService&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Fiber optic&#39;</span><span class="p">,</span> <span class="s1">&#39;DSL&#39;</span><span class="p">,</span><span class="s1">&#39;No&#39;</span><span class="p">])</span>
+            <span class="n">Contract</span> <span class="o">=</span> <span class="n">col3</span><span class="o">.</span><span class="n">selectbox</span><span class="p">(</span><span class="s1">&#39;Contract&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;One year&#39;</span><span class="p">,</span><span class="s1">&#39;Two year&#39;</span><span class="p">,</span><span class="s1">&#39;Month-to-month&#39;</span><span class="p">])</span>
+            <span class="n">PaymentMethod</span> <span class="o">=</span> <span class="n">col3</span><span class="o">.</span><span class="n">selectbox</span><span class="p">(</span><span class="s1">&#39;PaymentMethod&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Electronic check&#39;</span><span class="p">,</span> <span class="s1">&#39;Mailed check&#39;</span><span class="p">,</span><span class="s1">&#39;Bank transfer (automatic)&#39;</span><span class="p">,</span><span class="s1">&#39;Credit card (automatic)&#39;</span><span class="p">])</span>
+
+            <span class="nb">input</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="n">gender</span><span class="p">,</span> <span class="n">SeniorCitizen</span><span class="p">,</span> <span class="n">Partner</span><span class="p">,</span> <span class="n">Dependents</span><span class="p">,</span><span class="n">tenure</span><span class="p">,</span> <span class="n">PhoneService</span><span class="p">,</span> <span class="n">MultipleLines</span><span class="p">,</span> 
+                               <span class="n">InternetService</span><span class="p">,</span><span class="n">OnlineSecurity</span><span class="p">,</span> <span class="n">OnlineBackup</span><span class="p">,</span> <span class="n">DeviceProtection</span><span class="p">,</span> <span class="n">TechSupport</span><span class="p">,</span><span class="n">StreamingTV</span><span class="p">,</span>
+                                 <span class="n">StreamingMovies</span><span class="p">,</span> <span class="n">Contract</span><span class="p">,</span> <span class="n">PaperlessBilling</span><span class="p">,</span><span class="n">PaymentMethod</span><span class="p">,</span> <span class="n">MonthlyCharges</span><span class="p">,</span> <span class="n">TotalCharges</span><span class="p">]])</span>
+
+            <span class="n">input1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">input</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;gender&#39;</span><span class="p">,</span> <span class="s1">&#39;SeniorCitizen&#39;</span><span class="p">,</span> <span class="s1">&#39;Partner&#39;</span><span class="p">,</span> <span class="s1">&#39;Dependents&#39;</span><span class="p">,</span>
+                                                    <span class="s1">&#39;tenure&#39;</span><span class="p">,</span> <span class="s1">&#39;PhoneService&#39;</span><span class="p">,</span> <span class="s1">&#39;MultipleLines&#39;</span><span class="p">,</span> <span class="s1">&#39;InternetService&#39;</span><span class="p">,</span>
+                                                    <span class="s1">&#39;OnlineSecurity&#39;</span><span class="p">,</span> <span class="s1">&#39;OnlineBackup&#39;</span><span class="p">,</span> <span class="s1">&#39;DeviceProtection&#39;</span><span class="p">,</span> <span class="s1">&#39;TechSupport&#39;</span><span class="p">,</span>
+                                                    <span class="s1">&#39;StreamingTV&#39;</span><span class="p">,</span> <span class="s1">&#39;StreamingMovies&#39;</span><span class="p">,</span> <span class="s1">&#39;Contract&#39;</span><span class="p">,</span> <span class="s1">&#39;PaperlessBilling&#39;</span><span class="p">,</span>
+                                                    <span class="s1">&#39;PaymentMethod&#39;</span><span class="p">,</span> <span class="s1">&#39;MonthlyCharges&#39;</span><span class="p">,</span> <span class="s1">&#39;TotalCharges&#39;</span><span class="p">])</span>
+
+            <span class="n">predict</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">button</span><span class="p">(</span><span class="s1">&#39;Make a Prediction&#39;</span><span class="p">)</span>
+
+            <span class="c1"># Actions after user clicks on &#39;Make a Prediction&#39; button</span>
+            <span class="k">if</span> <span class="n">predict</span><span class="p">:</span>
+                <span class="k">with</span> <span class="n">st</span><span class="o">.</span><span class="n">spinner</span><span class="p">(</span><span class="s1">&#39;Please wait&#39;</span><span class="p">):</span>
+                    <span class="n">preprocess_pipe_foldername</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;preprocess&#39;</span><span class="p">][</span><span class="s1">&#39;preprocessing_main_folder&#39;</span><span class="p">]</span>
+                    <span class="n">preprocess_pipe_filename</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;preprocess&#39;</span><span class="p">][</span><span class="s1">&#39;preprocess_pipe_filename&#39;</span><span class="p">]</span>
+
+                    <span class="n">model_foldername</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;Model_paths&#39;</span><span class="p">][</span><span class="s1">&#39;model_path&#39;</span><span class="p">]</span>
+                    <span class="n">model_name</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;Model_paths&#39;</span><span class="p">][</span><span class="s1">&#39;model_name&#39;</span><span class="p">]</span>
+
+                    <span class="c1"># Loading saved preprocess pipeline</span>
+                    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">,</span><span class="n">preprocess_pipe_foldername</span><span class="p">,</span> <span class="n">preprocess_pipe_filename</span><span class="p">),</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                        <span class="n">preprocess_pipeline</span> <span class="o">=</span> <span class="n">joblib</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+
+                    <span class="c1"># Loading the saved machine learning model</span>
+                    <span class="k">def</span> <span class="nf">load_model</span><span class="p">(</span><span class="n">model_foldername</span><span class="p">,</span> <span class="n">model_name</span><span class="p">):</span>
+                        <span class="n">model</span> <span class="o">=</span> <span class="n">joblib</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">,</span>
+                            <span class="n">model_foldername</span><span class="p">,</span> <span class="n">model_name</span><span class="p">))</span>
+                        <span class="k">return</span> <span class="n">model</span>
+
+                    <span class="n">model</span> <span class="o">=</span> <span class="n">load_model</span><span class="p">(</span><span class="n">model_foldername</span><span class="p">,</span> <span class="n">model_name</span><span class="p">)</span>
+
+                    <span class="c1"># Preprocessing the input provided by the user</span>
+                    <span class="n">transformed_input</span> <span class="o">=</span> <span class="n">preprocess_pipeline</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">input1</span><span class="p">)</span>
+
+                    <span class="c1"># Making predictions using the saved model and the preprocessed data</span>
+                    <span class="n">prediction</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">transformed_input</span><span class="p">)</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="n">prediction</span><span class="p">)</span>
+
+                    <span class="c1"># making the predictions understandable for the user</span>
+                    <span class="n">churn_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+                    <span class="n">churn_dict</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Customer continues&#39;</span>
+                    <span class="n">churn_dict</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Customer Left&#39;</span>
+                    
+
+                    <span class="n">prediction</span> <span class="o">=</span> <span class="n">churn_dict</span><span class="p">[</span><span class="n">prediction</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span>
+
+                    <span class="c1"># Showing the prediction made to the user</span>
+                    <span class="n">st</span><span class="o">.</span><span class="n">subheader</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Customer status:   </span><span class="si">{</span><span class="n">prediction</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="n">e</span></div></div>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">wa</span> <span class="o">=</span> <span class="n">WebApp</span><span class="p">()</span>
+    <span class="n">wa</span><span class="o">.</span><span class="n">webapp</span><span class="p">()</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, M.Thirupati Reddy.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

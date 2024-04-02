@@ -1,0 +1,20 @@
+2024-03-30 09:03:34,470 : INFO : data_preprocessing.py : successfully transformed training dataset x and y
+2024-03-30 09:10:58,829 : ERROR : make_dataset.py : [Errno 2] No such file or directory: '../Data1/raw_Data/churn_data.csv'
+2024-03-30 09:10:58,832 : ERROR : data_preprocessing.py : [Errno 2] No such file or directory: '../Data1/raw_Data/churn_data.csv'
+2024-03-30 09:12:34,418 : INFO : data_preprocessing.py : successfully transformed training dataset x and y
+2024-03-30 09:15:55,949 : INFO : data_preprocessing.py : successfully transformed training dataset x and y
+2024-03-30 09:19:28,491 : INFO : data_preprocessing.py : successfully transformed training dataset x and y
+2024-03-30 09:21:31,846 : INFO : data_preprocessing.py : successfully transformed training dataset x and y
+2024-03-30 09:22:21,555 : INFO : data_preprocessing.py : successfully transformed training dataset x and y
+2024-03-30 09:24:02,493 : INFO : data_preprocessing.py : successfully transformed training dataset x and y
+2024-03-30 09:26:58,784 : INFO : model_training.py : Model initialized
+2024-03-30 09:27:17,137 : INFO : model_training.py : Model trained on the train data.
+2024-03-30 09:27:17,297 : INFO : model_training.py : Trained model evaluation done using validation data.
+2024-03-30 09:27:17,338 : INFO : model_training.py : Saved evaluations in files.
+2024-03-30 09:27:17,392 : INFO : model_training.py : Trained model saved as a joblib file.
+2024-03-30 12:03:53,504 : INFO : data_preprocessing.py : successfully transformed training dataset x and y
+2024-03-30 12:07:16,495 : INFO : model_training.py : Model initialized
+2024-03-30 12:07:28,339 : INFO : model_training.py : Model trained on the train data.
+2024-03-30 12:07:28,480 : INFO : model_training.py : Trained model evaluation done using validation data.
+2024-03-30 12:07:28,520 : INFO : model_training.py : Saved evaluations in files.
+2024-03-30 12:07:28,569 : INFO : model_training.py : Trained model saved as a joblib file.
