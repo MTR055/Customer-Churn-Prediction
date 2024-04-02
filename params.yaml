@@ -1,0 +1,64 @@
+columns_to_drop : 'customerID'
+
+
+logging_folder_paths:
+  main_log_foldername: Logs
+  data_loading: make_dataset.log
+  data_validation: data_validation.log
+  data_preprocessing: data_processing.log
+  model_creation: model_creation.log
+  make_predictions: make_predictions.log
+  make_dataset: make_dataset.log
+  model_training : model_training.log
+  web : web.log
+
+Data_paths:
+  main_data_path : Data
+  raw_data_path : raw_data
+  cleaned_data_path : cleaned_data
+  train_data_path : train_data
+  test_data_path : test_data
+  processed_data_path : processed_data
+  other : other
+
+
+  raw_data_filename : churn_data
+  target_column : Churn
+
+Model_paths:
+  model_path : Models
+  model_name : XGB_classifier
+
+  metric_main_path : Metrics
+  metric_path : metrics
+
+  metrics_filename : metrics
+  clf_report_filename : model_report
+
+preprocessing:
+  preprocess_pipe_foldername: Preprocess_pipeline
+  preprocess_pipe_filename: column_transformer.pkl
+preprocess:
+  preprocessing_main_folder: preprocessing_pipelines
+  preprocess_pipe_filename : column_transformer.pkl
+
+
+  
+
+data_location:
+  data_url_base: https://drive.google.com/uc?id=
+  data_url: https://raw.githubusercontent.com/rajeevratan84/datascienceforbusiness/master/WA_Fn-UseC_-Telco-Customer-Churn.csv
+
+
+model:
+  params:
+    n_estimators: 500
+    max_depth: 4
+    max_leaves: 2
+    learning_rate: 0.01
+  model_foldername: Models
+  model_name: model.joblib
+  metrics_path:
+    metrics_folder: Metrics
+    metrics_file: metrics.json
+    clf_report_filename: classification_report.csv

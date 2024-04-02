@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>src.data_validation &mdash; Customer Churn Prediction v.1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Customer Churn Prediction
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules.html">Movie_Revenue_prediction</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Customer Churn Prediction</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">src.data_validation</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for src.data_validation</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">)</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="kn">from</span> <span class="nn">src.utilities</span> <span class="kn">import</span> <span class="n">Utilities</span>
+<span class="kn">from</span> <span class="nn">src.logfile</span> <span class="kn">import</span> <span class="n">get_logger</span>
+
+<span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span> <span class="p">,</span> <span class="n">conint</span> 
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span> <span class="p">,</span> <span class="n">Optional</span><span class="p">,</span><span class="n">Dict</span>
+
+
+
+
+
+<span class="n">logger</span> <span class="o">=</span> <span class="n">get_logger</span><span class="p">(</span><span class="s1">&#39;data_validation&#39;</span><span class="p">)</span>
+
+
+
+<div class="viewcode-block" id="Dictvalidator"><a class="viewcode-back" href="../../src.html#src.data_validation.Dictvalidator">[docs]</a><span class="k">class</span> <span class="nc">Dictvalidator</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Dictvalidator</span>
+
+<span class="sd">    this functions validates the type of data present in particular column</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    BaseModel : </span>
+<span class="sd">        Inherits the properties from Pydantic.BaseModel</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+
+    <span class="n">tenure</span> <span class="p">:</span> <span class="nb">int</span>
+    <span class="n">MonthlyCharges</span> <span class="p">:</span> <span class="nb">float</span>
+    <span class="n">TotalCharges</span> <span class="p">:</span> <span class="nb">float</span>
+    <span class="n">gender</span> <span class="p">:</span> <span class="nb">str</span>
+    <span class="n">SeniorCitizen</span> <span class="p">:</span> <span class="nb">str</span>
+    <span class="n">Partner</span> <span class="p">:</span> <span class="nb">str</span>
+    <span class="n">Dependents</span> <span class="p">:</span> <span class="nb">str</span>
+    <span class="n">PhoneService</span> <span class="p">:</span> <span class="nb">str</span>
+    <span class="n">PaperlessBilling</span> <span class="p">:</span><span class="nb">str</span>
+    <span class="n">MultipleLines</span> <span class="p">:</span> <span class="nb">str</span>
+    <span class="n">InternetService</span> <span class="p">:</span><span class="nb">str</span>
+    <span class="n">OnlineSecurity</span><span class="p">:</span><span class="nb">str</span>
+    <span class="n">OnlineBackup</span><span class="p">:</span><span class="nb">str</span>
+    <span class="n">DeviceProtection</span><span class="p">:</span><span class="nb">str</span>
+    <span class="n">TechSupport</span><span class="p">:</span><span class="nb">str</span>
+    <span class="n">StreamingTV</span><span class="p">:</span><span class="nb">str</span>
+    <span class="n">StreamingMovies</span><span class="p">:</span><span class="nb">str</span>
+    <span class="n">Contract</span><span class="p">:</span><span class="nb">str</span>
+    <span class="n">PaymentMethod</span><span class="p">:</span><span class="nb">str</span></div>
+
+
+
+<div class="viewcode-block" id="Dataframevalidator"><a class="viewcode-back" href="../../src.html#src.data_validation.Dataframevalidator">[docs]</a><span class="k">class</span> <span class="nc">Dataframevalidator</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Dataframevalidator </span>
+
+<span class="sd">    Checks for all the dataframe</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">df_dict</span> <span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dictvalidator</span><span class="p">]</span></div>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+
+    <span class="n">params</span> <span class="o">=</span> <span class="n">Utilities</span><span class="p">()</span><span class="o">.</span><span class="n">read_params</span><span class="p">()</span>
+    <span class="n">main_data_folder</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;Data_paths&#39;</span><span class="p">][</span><span class="s1">&#39;main_data_path&#39;</span><span class="p">]</span>
+    <span class="n">raw_data_folder</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;Data_paths&#39;</span><span class="p">][</span><span class="s1">&#39;raw_data_path&#39;</span><span class="p">]</span>
+    <span class="n">raw_data_filename</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;Data_paths&#39;</span><span class="p">][</span><span class="s1">&#39;raw_data_filename&#39;</span><span class="p">]</span>
+
+    <span class="n">raw_data_file_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">,</span><span class="n">main_data_folder</span><span class="p">,</span><span class="n">raw_data_folder</span><span class="p">,</span><span class="n">raw_data_filename</span><span class="o">+</span><span class="s1">&#39;.csv&#39;</span><span class="p">)</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">raw_data_file_path</span><span class="p">)</span>
+
+    <span class="k">try</span> <span class="p">:</span> 
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;getting ready to open file&#39;</span><span class="p">)</span>
+        <span class="n">Dataframevalidator</span><span class="p">(</span><span class="n">df_dict</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(</span><span class="n">orient</span><span class="o">=</span><span class="s1">&#39;records&#39;</span><span class="p">))</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;test completed&#39;</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span> <span class="p">:</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+        <span class="k">raise</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, M.Thirupati Reddy.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

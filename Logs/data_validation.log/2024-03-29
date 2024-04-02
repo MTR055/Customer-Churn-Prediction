@@ -1,0 +1,24 @@
+2024-03-29 11:00:27,740 : INFO : data_validation.py : getting ready to open file
+2024-03-29 11:00:28,031 : WARNING : data_validation.py : 11 validation errors for Dataframevalidator
+df_dict -> 488 -> TotalCharges
+  value is not a valid float (type=type_error.float)
+df_dict -> 753 -> TotalCharges
+  value is not a valid float (type=type_error.float)
+df_dict -> 936 -> TotalCharges
+  value is not a valid float (type=type_error.float)
+df_dict -> 1082 -> TotalCharges
+  value is not a valid float (type=type_error.float)
+df_dict -> 1340 -> TotalCharges
+  value is not a valid float (type=type_error.float)
+df_dict -> 3331 -> TotalCharges
+  value is not a valid float (type=type_error.float)
+df_dict -> 3826 -> TotalCharges
+  value is not a valid float (type=type_error.float)
+df_dict -> 4380 -> TotalCharges
+  value is not a valid float (type=type_error.float)
+df_dict -> 5218 -> TotalCharges
+  value is not a valid float (type=type_error.float)
+df_dict -> 6670 -> TotalCharges
+  value is not a valid float (type=type_error.float)
+df_dict -> 6754 -> TotalCharges
+  value is not a valid float (type=type_error.float)

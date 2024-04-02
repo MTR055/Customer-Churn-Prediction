@@ -1,0 +1,92 @@
+2024-03-29 10:08:48,125 : ERROR : make_dataset.py : 'train_data'
+2024-03-29 10:10:02,873 : ERROR : make_dataset.py : 'train_data'
+2024-03-29 10:10:53,347 : ERROR : make_dataset.py : 'train_data'
+2024-03-29 10:14:25,885 : ERROR : make_dataset.py : 'train_data'
+2024-03-29 10:15:48,397 : ERROR : make_dataset.py : 'train_data'
+2024-03-29 10:17:01,606 : ERROR : make_dataset.py : [Errno 2] No such file or directory: '../Data/train_data/x_train.csv'
+2024-03-29 10:19:16,804 : WARNING : data_preprocessing.py : could not convert string to float: 
+2024-03-29 10:25:25,139 : ERROR : make_dataset.py : [Errno 2] No such file or directory: '../Data/train_data/x_train'
+2024-03-29 10:25:55,093 : WARNING : data_preprocessing.py : could not convert string to float: 
+2024-03-29 10:28:27,510 : WARNING : data_preprocessing.py : could not convert string to float: 
+2024-03-29 10:30:21,191 : WARNING : data_preprocessing.py : could not convert string to float: 
+2024-03-29 10:33:06,233 : WARNING : data_preprocessing.py : could not convert string to float: 
+2024-03-29 10:36:39,939 : WARNING : data_preprocessing.py : could not convert string to float: 
+2024-03-29 10:48:48,926 : ERROR : make_dataset.py : 'processed_data_folder'
+2024-03-29 10:48:48,928 : WARNING : data_preprocessing.py : 'processed_data_folder'
+2024-03-29 10:49:53,057 : ERROR : make_dataset.py : 'numpy.ndarray' object has no attribute 'to_csv'
+2024-03-29 10:49:53,058 : WARNING : data_preprocessing.py : 'numpy.ndarray' object has no attribute 'to_csv'
+2024-03-29 10:51:49,299 : INFO : data_preprocessing.py : successfully transformed training dataset x and y
+2024-03-29 13:22:19,735 : INFO : model_training.py : Model initialized
+2024-03-29 13:22:19,816 : ERROR : model_training.py : [13:22:19] ../src/data/data.cc:592: Check failed: labels_.Size() == num_row_ (1 vs. 5625) : Size of labels must equal to number of rows.
+Stack trace:
+  [bt] (0) /home/mtr_055/miniconda3/envs/learning/lib/python3.6/site-packages/xgboost/lib/libxgboost.so(+0x1135c9) [0x7f9e555135c9]
+  [bt] (1) /home/mtr_055/miniconda3/envs/learning/lib/python3.6/site-packages/xgboost/lib/libxgboost.so(+0x11f669) [0x7f9e5551f669]
+  [bt] (2) /home/mtr_055/miniconda3/envs/learning/lib/python3.6/site-packages/xgboost/lib/libxgboost.so(+0x1aa649) [0x7f9e555aa649]
+  [bt] (3) /home/mtr_055/miniconda3/envs/learning/lib/python3.6/site-packages/xgboost/lib/libxgboost.so(+0x1b4771) [0x7f9e555b4771]
+  [bt] (4) /home/mtr_055/miniconda3/envs/learning/lib/python3.6/site-packages/xgboost/lib/libxgboost.so(XGBoosterUpdateOneIter+0x68) [0x7f9e554994f8]
+  [bt] (5) /home/mtr_055/miniconda3/envs/learning/lib/python3.6/lib-dynload/../../libffi.so.8(+0xa052) [0x7f9ea3bb6052]
+  [bt] (6) /home/mtr_055/miniconda3/envs/learning/lib/python3.6/lib-dynload/../../libffi.so.8(+0x8925) [0x7f9ea3bb4925]
+  [bt] (7) /home/mtr_055/miniconda3/envs/learning/lib/python3.6/lib-dynload/../../libffi.so.8(ffi_call+0xde) [0x7f9ea3bb506e]
+  [bt] (8) /home/mtr_055/miniconda3/envs/learning/lib/python3.6/lib-dynload/_ctypes.cpython-36m-x86_64-linux-gnu.so(_ctypes_callproc+0x2c4) [0x7f9ea3c9cc64]
+
+
+2024-03-29 13:26:32,575 : ERROR : data_preprocessing.py : Found input variables with inconsistent numbers of samples: [7032, 7043]
+2024-03-29 13:28:27,062 : ERROR : data_preprocessing.py : Found input variables with inconsistent numbers of samples: [7032, 7043]
+2024-03-29 13:29:30,725 : ERROR : make_dataset.py : [Errno 2] No such file or directory: '../Data/train_data/x_train.csv'
+2024-03-29 13:34:52,699 : INFO : data_preprocessing.py : successfully transformed training dataset x and y
+2024-03-29 13:35:24,460 : INFO : model_training.py : Model initialized
+2024-03-29 13:35:24,522 : ERROR : model_training.py : [13:35:24] ../src/data/data.cc:592: Check failed: labels_.Size() == num_row_ (1 vs. 5625) : Size of labels must equal to number of rows.
+Stack trace:
+  [bt] (0) /home/mtr_055/miniconda3/envs/learning/lib/python3.6/site-packages/xgboost/lib/libxgboost.so(+0x1135c9) [0x7f6c37b135c9]
+  [bt] (1) /home/mtr_055/miniconda3/envs/learning/lib/python3.6/site-packages/xgboost/lib/libxgboost.so(+0x11f669) [0x7f6c37b1f669]
+  [bt] (2) /home/mtr_055/miniconda3/envs/learning/lib/python3.6/site-packages/xgboost/lib/libxgboost.so(+0x1aa649) [0x7f6c37baa649]
+  [bt] (3) /home/mtr_055/miniconda3/envs/learning/lib/python3.6/site-packages/xgboost/lib/libxgboost.so(+0x1b4771) [0x7f6c37bb4771]
+  [bt] (4) /home/mtr_055/miniconda3/envs/learning/lib/python3.6/site-packages/xgboost/lib/libxgboost.so(XGBoosterUpdateOneIter+0x68) [0x7f6c37a994f8]
+  [bt] (5) /home/mtr_055/miniconda3/envs/learning/lib/python3.6/lib-dynload/../../libffi.so.8(+0xa052) [0x7f6c86146052]
+  [bt] (6) /home/mtr_055/miniconda3/envs/learning/lib/python3.6/lib-dynload/../../libffi.so.8(+0x8925) [0x7f6c86144925]
+  [bt] (7) /home/mtr_055/miniconda3/envs/learning/lib/python3.6/lib-dynload/../../libffi.so.8(ffi_call+0xde) [0x7f6c8614506e]
+  [bt] (8) /home/mtr_055/miniconda3/envs/learning/lib/python3.6/lib-dynload/_ctypes.cpython-36m-x86_64-linux-gnu.so(_ctypes_callproc+0x2c4) [0x7f6c8622cc64]
+
+
+2024-03-29 13:36:34,594 : ERROR : model_training.py : local variable 'x_test_processed' referenced before assignment
+2024-03-29 13:37:30,552 : INFO : model_training.py : Model initialized
+2024-03-29 13:37:30,625 : ERROR : model_training.py : [13:37:30] ../src/data/data.cc:592: Check failed: labels_.Size() == num_row_ (1 vs. 5625) : Size of labels must equal to number of rows.
+Stack trace:
+  [bt] (0) /home/mtr_055/miniconda3/envs/learning/lib/python3.6/site-packages/xgboost/lib/libxgboost.so(+0x1135c9) [0x7fded65135c9]
+  [bt] (1) /home/mtr_055/miniconda3/envs/learning/lib/python3.6/site-packages/xgboost/lib/libxgboost.so(+0x11f669) [0x7fded651f669]
+  [bt] (2) /home/mtr_055/miniconda3/envs/learning/lib/python3.6/site-packages/xgboost/lib/libxgboost.so(+0x1aa649) [0x7fded65aa649]
+  [bt] (3) /home/mtr_055/miniconda3/envs/learning/lib/python3.6/site-packages/xgboost/lib/libxgboost.so(+0x1b4771) [0x7fded65b4771]
+  [bt] (4) /home/mtr_055/miniconda3/envs/learning/lib/python3.6/site-packages/xgboost/lib/libxgboost.so(XGBoosterUpdateOneIter+0x68) [0x7fded64994f8]
+  [bt] (5) /home/mtr_055/miniconda3/envs/learning/lib/python3.6/lib-dynload/../../libffi.so.8(+0xa052) [0x7fdf24b46052]
+  [bt] (6) /home/mtr_055/miniconda3/envs/learning/lib/python3.6/lib-dynload/../../libffi.so.8(+0x8925) [0x7fdf24b44925]
+  [bt] (7) /home/mtr_055/miniconda3/envs/learning/lib/python3.6/lib-dynload/../../libffi.so.8(ffi_call+0xde) [0x7fdf24b4506e]
+  [bt] (8) /home/mtr_055/miniconda3/envs/learning/lib/python3.6/lib-dynload/_ctypes.cpython-36m-x86_64-linux-gnu.so(_ctypes_callproc+0x2c4) [0x7fdf24c2cc64]
+
+
+2024-03-29 13:40:34,597 : INFO : model_training.py : Model initialized
+2024-03-29 13:41:13,463 : INFO : model_training.py : Model trained on the train data.
+2024-03-29 13:41:13,647 : INFO : model_training.py : Trained model evaluation done using validation data.
+2024-03-29 13:41:13,688 : ERROR : model_training.py : 'metrics_path'
+2024-03-29 13:42:43,442 : INFO : model_training.py : Model initialized
+2024-03-29 13:43:20,888 : INFO : model_training.py : Model trained on the train data.
+2024-03-29 13:43:21,069 : INFO : model_training.py : Trained model evaluation done using validation data.
+2024-03-29 13:43:21,112 : INFO : model_training.py : Saved evaluations in files.
+2024-03-29 13:43:21,168 : INFO : model_training.py : Trained model saved as a joblib file.
+2024-03-29 13:48:24,518 : INFO : model_training.py : Model initialized
+2024-03-29 13:49:03,262 : INFO : model_training.py : Model trained on the train data.
+2024-03-29 13:49:03,450 : INFO : model_training.py : Trained model evaluation done using validation data.
+2024-03-29 13:49:03,497 : INFO : model_training.py : Saved evaluations in files.
+2024-03-29 13:49:03,552 : INFO : model_training.py : Trained model saved as a joblib file.
+2024-03-29 13:53:11,465 : INFO : model_training.py : Model initialized
+2024-03-29 13:53:49,293 : INFO : model_training.py : Model trained on the train data.
+2024-03-29 13:53:49,487 : INFO : model_training.py : Trained model evaluation done using validation data.
+2024-03-29 13:53:49,535 : INFO : model_training.py : Saved evaluations in files.
+2024-03-29 13:53:49,587 : INFO : model_training.py : Trained model saved as a joblib file.
+2024-03-29 14:25:48,397 : INFO : make_dataset.py : Loading of data started.
+2024-03-29 14:26:06,809 : INFO : make_dataset.py : new file is being created
+2024-03-29 14:26:06,986 : INFO : make_dataset.py : Data loading completed and data saved to the directory Data/raw
+2024-03-29 14:26:51,444 : INFO : make_dataset.py : Loading of data started.
+2024-03-29 14:27:04,840 : INFO : make_dataset.py : new file is being created
+2024-03-29 14:27:05,045 : INFO : make_dataset.py : Data loading completed and data saved to the directory Data/raw
+2024-03-29 14:31:28,307 : INFO : data_preprocessing.py : successfully transformed training dataset x and y
+2024-03-29 15:41:25,720 : INFO : data_preprocessing.py : successfully transformed training dataset x and y

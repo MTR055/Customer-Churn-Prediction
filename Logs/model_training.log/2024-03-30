@@ -1,0 +1,10 @@
+2024-03-30 09:26:58,784 : INFO : model_training.py : Model initialized
+2024-03-30 09:27:17,137 : INFO : model_training.py : Model trained on the train data.
+2024-03-30 09:27:17,297 : INFO : model_training.py : Trained model evaluation done using validation data.
+2024-03-30 09:27:17,338 : INFO : model_training.py : Saved evaluations in files.
+2024-03-30 09:27:17,392 : INFO : model_training.py : Trained model saved as a joblib file.
+2024-03-30 12:07:16,495 : INFO : model_training.py : Model initialized
+2024-03-30 12:07:28,339 : INFO : model_training.py : Model trained on the train data.
+2024-03-30 12:07:28,480 : INFO : model_training.py : Trained model evaluation done using validation data.
+2024-03-30 12:07:28,520 : INFO : model_training.py : Saved evaluations in files.
+2024-03-30 12:07:28,569 : INFO : model_training.py : Trained model saved as a joblib file.
