@@ -11,5 +11,6 @@
     Through Statistical Tests it was found the gender has no effect on Churn
 3) Developed Data preprocessing , Data modelling and model training scripts
 4) Linked the scripts and model training to webapp using Streamlit
-5) The link for the prediction is
+5) The link for the prediction is [link](http://172.27.123.151:8501)
+   
   
